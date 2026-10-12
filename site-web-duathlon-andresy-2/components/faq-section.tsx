@@ -73,10 +73,10 @@ export function FaqSection() {
           <p className="mt-6 text-muted-foreground">
             {"Une autre question ? "}
             <a
-              href="mailto:contact@andresytriathlon.fr"
+              href="mailto:andresytriathlon@outlook.fr"
               className="font-semibold text-foreground underline decoration-accent underline-offset-4"
             >
-              contact@andresytriathlon.fr
+              andresytriathlon@outlook.fr
             </a>
           </p>
         </div>
