@@ -36,7 +36,7 @@ export function ReglementSection() {
           />
           <div className="mt-8 flex flex-col gap-3 sm:flex-row md:flex-col lg:flex-row">
             <a
-              href="https://drive.google.com/file/d/1DXzsGztzncCg7eH01uQF8VfbXy7riTbP/view?usp=sharing"
+              href="https://drive.google.com/file/d/1sk_JbzND2wmhV8bZQei2FgTL4Q1XE1Ax/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-accent px-5 font-semibold text-accent-foreground transition-opacity hover:opacity-90"
