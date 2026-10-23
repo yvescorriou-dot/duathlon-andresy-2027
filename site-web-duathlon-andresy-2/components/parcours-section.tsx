@@ -96,19 +96,32 @@ export function ParcoursSection() {
           ))}
         </ol>
 
-        <aside className="mt-6 flex flex-col gap-4 rounded-xl border-2 border-dashed border-accent/60 p-6 md:flex-row md:items-center">
-          <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground">
-            <Mountain className="size-5" aria-hidden="true" />
+               <aside className="mt-6 overflow-hidden rounded-xl border-2 border-accent/60 md:grid md:grid-cols-[280px_1fr]">
+          <div className="relative min-h-48">
+            <Image
+              src="/images/velo-verdun.jpg"
+              alt="Cyclistes en pleine ascension de la côte de Verdun"
+              fill
+              sizes="280px"
+              className="object-cover contrast-[1.05] saturate-[1.08]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-primary/20" aria-hidden="true" />
           </div>
-          <div>
+          <div className="flex flex-col justify-center p-6">
             <div className="flex flex-wrap items-center gap-2">
-              <h3 className="font-display text-2xl font-bold uppercase italic">{'Challenge des grimpeurs'}</h3>
-              <span className="rounded-full bg-primary-foreground/10 px-2.5 py-0.5 text-xs font-bold uppercase tracking-widest text-accent">
-                {'Optionnel · à confirmer'}
+              <h3 className="flex items-center gap-2 font-display text-2xl font-bold uppercase italic">
+                <Mountain className="size-5 text-accent" aria-hidden="true" />
+                {'Challenge des grimpeurs'}
+              </h3>
+              <span className="rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold uppercase tracking-widest text-accent-foreground">
+                {'Confirmé · chronométré'}
               </span>
             </div>
+            <p className="mt-3 leading-relaxed text-primary-foreground/80">
+              {"Mesdames et messieurs, voici la Côte de Verdun : 200 petits mètres de pur bonheur… ou de pur calvaire, selon ton niveau de caféine du matin ! Avec ses 29 mètres de dénivelé (dont 100 m à 15,6 % – oui, tu as bien lu), cette côte te fera regretter tes choix de vie en 30 secondes chrono."}
+            </p>
             <p className="mt-2 leading-relaxed text-primary-foreground/80">
-              {"Comme en 2026, un classement spécifique pourrait récompenser les plus rapides dans la côte de Verdun. Sa reconduction pour 2027 sera confirmée prochainement."}
+              {"Un défi dans la montée, une légende en haut : la mythique Côte de Verdun devient l'arène d'un challenge chronométré exceptionnel. Le meilleur temps de montée sera récompensé et une récompense spéciale sera remise aux vainqueurs."}
             </p>
           </div>
         </aside>
