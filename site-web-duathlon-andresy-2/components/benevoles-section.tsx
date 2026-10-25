@@ -1,9 +1,6 @@
 import Image from 'next/image'
-import { ArrowUpRight, HeartHandshake } from 'lucide-react'
+import { HeartHandshake } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
-
-const BENEVOLES_FORM_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSer6fFh06R6cUYALVlBz8w-vxs1hYQmp-s3SwmCGOALS5eUbw/viewform?usp=dialog'
 
 const missions = [
   'Dimanche matin : montage du parc à vélos , arches, sécurité, buvette, arrivée et village partenaires',
@@ -43,16 +40,16 @@ export function BenevolesSection() {
             <p className="mt-6 leading-relaxed text-muted-foreground">
               {"Être bénévole, c'est être acteur d'un événement régional, au plus près des athlètes, dans une ambiance conviviale. Entraînez parents et amis !"}
             </p>
-            <a
-              href={BENEVOLES_FORM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex h-12 items-center gap-2 rounded-md bg-accent px-6 font-semibold text-accent-foreground transition-opacity hover:opacity-90"
-            >
-              {'Je deviens bénévole'}
-              <ArrowUpRight className="size-4" aria-hidden="true" />
-              <span className="sr-only">{'(formulaire Google, nouvel onglet)'}</span>
-            </a>
+                    <div className="mt-8 rounded-md border border-border bg-muted/50 px-6 py-5">
+              <p className="font-semibold">Recrutement des bénévoles 2027 : bientôt ouvert !</p>
+              <p className="mt-2 text-muted-foreground">
+                {"Nous préparons la campagne de recrutement de l'édition 2027. D'ici là, écrivez-nous à "}
+                <a href="mailto:contact@triathlon-andresy.fr" className="font-semibold text-accent underline underline-offset-4 hover:opacity-80">
+                  ADRESSE@EXEMPLE.fr
+                </a>
+                {" pour manifester votre envie de nous rejoindre — nous vous recontacterons dès l'ouverture."}
+              </p>
+            </div>
           </div>
         </div>
       </div>
