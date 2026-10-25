@@ -44,7 +44,7 @@ export function BenevolesSection() {
               <p className="font-semibold">Recrutement des bénévoles 2027 : bientôt ouvert !</p>
               <p className="mt-2 text-muted-foreground">
                 {"Nous préparons la campagne de recrutement de l'édition 2027. D'ici là, écrivez-nous à "}
-                <a href="mailto:contact@triathlon-andresy.fr" className="font-semibold text-accent underline underline-offset-4 hover:opacity-80">
+                <a href="mailto:andresytriathlon@outlook.fr" className="font-semibold text-accent underline underline-offset-4 hover:opacity-80">
                   ADRESSE@EXEMPLE.fr
                 </a>
                 {" pour manifester votre envie de nous rejoindre — nous vous recontacterons dès l'ouverture."}
