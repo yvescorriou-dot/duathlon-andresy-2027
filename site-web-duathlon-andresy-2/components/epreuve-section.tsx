@@ -17,7 +17,7 @@ export function EpreuveSection() {
               {" : course à pied, vélo, course à pied, le tout au cœur d'Andrésy."}
             </p>
             <p>
-              {"Une première boucle le long de la Seine et dans la ville pour se mettre en jambes, un peu de D+ en vélo avec deux passages de la côte de Verdun et beaucoup de pilotage dans les rues, puis un final qui te fera découvrir toutes les petites sentes du village."}
+              {"Une première boucle le long de la Seine et dans la ville pour se mettre en jambes, un peu de D+ en vélo avec deux passages de la côte de Verdun et beaucoup de pilotage dans les rues, puis un final qui vous fera découvrir toutes les petites sentes du village."}
             </p>
             <p className="border-l-4 border-accent pl-4 font-medium text-foreground">
               {"Bien plus qu'une course : un moment convivial, sportif et engagé, en terre familière."}
