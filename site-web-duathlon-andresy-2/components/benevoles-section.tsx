@@ -6,7 +6,7 @@ const BENEVOLES_FORM_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLSer6fFh06R6cUYALVlBz8w-vxs1hYQmp-s3SwmCGOALS5eUbw/viewform?usp=dialog'
 
 const missions = [
-  'Dimanche matin : montage du parc à vélos , arches, sécurité, buvette , zone d'arrivée et du village partenaires',
+  'Dimanche matin : montage du parc à vélos , arches, sécurité, buvette, arrivée et village partenaires',
   'Dimanche après-midi : sécurisation des parcours (signaleurs)',
   'Logistique : matériel, véhicules, ravitaillements',
 ]
