@@ -118,7 +118,7 @@ export function ParcoursSection() {
               </span>
             </div>
             <p className="mt-3 leading-relaxed text-primary-foreground/80">
-              {"Mesdames et messieurs, voici la Côte de Verdun : 200 petits mètres de pur bonheur… ou de pur calvaire, selon ton niveau de caféine du matin ! Avec ses 29 mètres de dénivelé (dont 100 m à 15,6 % – oui, tu as bien lu), cette côte te fera regretter tes choix de vie en 30 secondes chrono."}
+              {"Au programme de l'épreuve vélo : la Côte de Verdun, que vous gravirez à deux reprises. Ses 200 mètres et ses 29 mètres de dénivelé — dont 100 m à 15,6 % — en font le passage le plus exigeant du parcours, mais aussi le plus spectaculaire."}
             </p>
             <p className="mt-2 leading-relaxed text-primary-foreground/80">
               {"Un défi dans la montée, une légende en haut : la mythique Côte de Verdun devient l'arène d'un challenge chronométré exceptionnel. Le meilleur temps de montée sera récompensé, et un prix spécial sera remis aux vainqueurs."}
