@@ -18,6 +18,8 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   title: "Duathlon d'Andrésy 2027 | Triath'Club d'Andrésy",
+  metadataBase: new URL('https://duathlon-andresy.fr'),
+  alternates: { canonical: '/' },
   description:
     "Duathlon format S intra-urbain à Andrésy (Yvelines) : 5 km de course à pied, 20 km de vélo, 2,5 km de course à pied. Dimanche 30 mai 2027 à 15h. Organisé par le Triath'Club d'Andrésy.",
   generator: 'v0.app',
