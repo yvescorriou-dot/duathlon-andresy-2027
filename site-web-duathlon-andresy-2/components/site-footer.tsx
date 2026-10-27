@@ -43,7 +43,7 @@ export function SiteFooter() {
               <FacebookIcon />
             </a>
             <a
-              href="https://www.instagram.com/triathlonandresy/"
+              href="https://www.instagram.com/andresytriathlon/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram du Triath'Club d'Andrésy (nouvel onglet)"
