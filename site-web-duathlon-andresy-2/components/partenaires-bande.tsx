@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 // Logos qui défilent — ajouter ou retirer des lignes librement
+// (affichés en blanc uni sur fond bleu, quelle que soit leur couleur d'origine)
 const logos = [
   '/images/logos/logo ippon 2.png',
   '/images/logos/logo wedgwood.png',
@@ -22,17 +23,17 @@ export function PartenairesBande() {
   return (
     <section
       aria-label="Nos partenaires et supporters"
-      className="overflow-hidden border-y border-border bg-muted/40 py-6"
+      className="overflow-hidden bg-primary py-8"
     >
-      <div className="flex w-max animate-marquee gap-10 hover:[animation-play-state:paused]">
+      <div className="flex w-max animate-marquee items-center gap-12 hover:[animation-play-state:paused]">
         {[...logos, ...logos].map((src, i) => (
-          <div key={i} className="flex shrink-0 items-center px-5">
+          <div key={i} className="flex shrink-0 items-center px-6">
             <Image
               src={src}
               alt="Partenaire du duathlon d'Andrésy"
               width={150}
-              height={50}
-              className="h-12 w-auto object-contain opacity-70"
+              height={60}
+              className="h-14 w-auto object-contain brightness-0 invert opacity-80"
             />
           </div>
         ))}
