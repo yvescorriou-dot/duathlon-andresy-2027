@@ -12,7 +12,7 @@ type Partenaire = {
 const mecenes: Partenaire[] = [
   {
     name: 'IPPON',
-    logo: '/images/logos/logo la Cucina.jpeg',
+    logo: '/images/logos/logo La Cucina.jpeg',
     url: 'https://fr.ippon.tech/',
     role: 'Mécène du Triath\'Club d\'Andrésy',
   },
