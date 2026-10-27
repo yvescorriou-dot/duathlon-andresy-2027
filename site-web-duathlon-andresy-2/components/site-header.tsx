@@ -12,7 +12,7 @@ import { Menu, X } from 'lucide-react'
   { href: '#inscriptions', label: 'Inscriptions' },
   { href: '#reglement', label: 'Règlement' },
   { href: '#benevoles', label: 'Bénévoles' },
-  { href: '#partenaires', label: 'Partenaires' },
+ // { href: '#partenaires', label: 'Partenaires' },
   { href: '#faq', label: 'FAQ' },
 ]
 
