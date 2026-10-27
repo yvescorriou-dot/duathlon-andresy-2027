@@ -48,7 +48,7 @@ function PartenaireCard({ p, big }: { p: Partenaire; big?: boolean }) {
           alt={`Logo ${p.name}`}
           width={big ? 400 : 220}
           height={big ? 200 : 110}
-          className="mx-auto w-auto max-h-[90px] md:max-h-[110px] object-contain grayscale opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100"
+       className="mx-auto w-auto max-h-[90px] md:max-h-[110px] object-contain transition duration-300 [@media(hover:hover)]:grayscale [@media(hover:hover)]:opacity-70 [@media(hover:hover)]:group-hover:grayscale-0 [@media(hover:hover)]:group-hover:opacity-100"
         />
       ) : (
         <span className="font-display text-lg font-bold uppercase">{p.name}</span>
