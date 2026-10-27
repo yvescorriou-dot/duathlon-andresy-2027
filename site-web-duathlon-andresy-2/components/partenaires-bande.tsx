@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 // Logos qui défilent — ajouter ou retirer des lignes librement
 const logos = [
+  '/images/logos/logo ippon 2.png',
+  '/images/logos/logo wedgwood.png',
   '/images/logos/Ktalyst.jpg',
   '/images/logos/Oger père et fils.jpeg',
   '/images/logos/logo La Cucina.jpeg',
