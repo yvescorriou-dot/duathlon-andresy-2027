@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
-const links = [
+  const links = [
   { href: '#epreuve', label: "L'épreuve" },
   { href: '#parcours', label: 'Parcours' },
   { href: '#programme', label: 'Programme' },
@@ -12,6 +12,7 @@ const links = [
   { href: '#inscriptions', label: 'Inscriptions' },
   { href: '#reglement', label: 'Règlement' },
   { href: '#benevoles', label: 'Bénévoles' },
+  { href: '#partenaires', label: 'Partenaires' },
   { href: '#faq', label: 'FAQ' },
 ]
 
