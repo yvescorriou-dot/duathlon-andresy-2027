@@ -9,6 +9,7 @@ import { ReglementSection } from '@/components/reglement-section'
 import { BenevolesSection } from '@/components/benevoles-section'
 import { FaqSection } from '@/components/faq-section'
 import { PartenairesSection } from '@/components/partenaires-section'
+import { PartenairesBande } from '@/components/partenaires-bande'
 import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
@@ -27,6 +28,7 @@ export default function Page() {
         <PartenairesSection />
         <FaqSection />
       </main>
+      <PartenairesBande />
       <SiteFooter />
     </>
   )
