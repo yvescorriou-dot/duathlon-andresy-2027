@@ -12,7 +12,7 @@ type Partenaire = {
 const mecenes: Partenaire[] = [
   {
     name: 'IPPON',
-    logo: '/images/logos/LOGO IPPON.png',
+    logo: '/images/logos/logo la Cucina.jpeg',
     url: 'https://fr.ippon.tech/',
     role: 'Mécène du Triath\'Club d\'Andrésy',
   },
@@ -29,7 +29,7 @@ const institutionnels: Partenaire[] = [
     name: "Ville d'Andrésy",
     logo: '/images/logos/530589785_1188204843325777_100555503459991461_n.jpeg',
     url: 'https://www.andresy.com',
-    role: 'Services techniques, police municipale, accueil de l\'épreuve',
+    role: 'Mairie, Services techniques, police municipale, accueil de l\'épreuve',
   },
   {
     name: 'Comité Départemental des Yvelines',
