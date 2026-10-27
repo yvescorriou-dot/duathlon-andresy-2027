@@ -1,3 +1,5 @@
+import { Facebook, Instagram } from 'lucide-react'
+
 export function SiteFooter() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -14,7 +16,27 @@ export function SiteFooter() {
           </p>
         </div>
         <div className="text-sm text-primary-foreground/70 md:text-right">
-          <p>
+          <div className="flex items-center gap-5 md:justify-end">
+            <a
+              href="https://www.facebook.com/Andresytriathlon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook du Triath'Club d'Andrésy (nouvel onglet)"
+              className="transition-opacity hover:opacity-70"
+            >
+              <Facebook className="size-6" aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.instagram.com/triathlonandresy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram du Triath'Club d'Andrésy (nouvel onglet)"
+              className="transition-opacity hover:opacity-70"
+            >
+              <Instagram className="size-6" aria-hidden="true" />
+            </a>
+          </div>
+          <p className="mt-4">
             {'Contact : '}
             <a href="mailto:andresytriathlon@outlook.fr" className="font-medium text-primary-foreground underline-offset-4 hover:underline">
               andresytriathlon@outlook.fr
