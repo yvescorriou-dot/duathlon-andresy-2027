@@ -5,7 +5,7 @@ const logos = [
   '/images/logos/logo ippon 2.png',
   '/images/logos/logo wedgwood.png',
   '/images/logos/Ktalyst.jpg',
-  '/images/logos/Oger père et fils.jpeg',
+  '/images/logos/oger.png',
   '/images/logos/logo La Cucina.jpeg',
   '/images/logos/674844bf8cbae_creditMutuel.jpeg',
   '/images/logos/Hesprie Logo N&B.png',
