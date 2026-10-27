@@ -27,7 +27,7 @@ const mecenes: Partenaire[] = [
 const institutionnels: Partenaire[] = [
   {
     name: "Ville d'Andrésy",
-    logo: '/images/logos/ville andresy.jpeg',
+    logo: '/images/logos/Ville andresy.jpeg',
     url: 'https://www.andresy.com',
     role: 'Mairie, Services techniques, police municipale, accueil de l\'épreuve',
   },
