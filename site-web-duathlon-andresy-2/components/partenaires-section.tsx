@@ -13,13 +13,13 @@ const mecenes: Partenaire[] = [
   {
     name: 'IPPON',
     logo: '/images/logos/logo ippon.png',
-    url: 'https://www.ippon.fr',
+    url: 'https://fr.ippon.tech/',
     role: 'Mécène du Triath\'Club d\'Andrésy',
   },
   {
     name: 'Maisons Wedgwood',
     logo: '/images/logos/logo wedgwood.png',
-    // url: à compléter avec le site de l'entreprise,
+    url: 'https://www.maisonswedgwood.com',
     role: 'Mécène du Triath\'Club d\'Andrésy',
   },
 ]
@@ -34,7 +34,7 @@ const institutionnels: Partenaire[] = [
   {
     name: 'Comité Départemental des Yvelines',
     logo: '/images/logos/ConseilDepartementalYvelines.png',
-    // url: à compléter,
+    url: 'https://www.yvelines.fr/',
     role: 'Soutien et participation financière',
   },
 ]
