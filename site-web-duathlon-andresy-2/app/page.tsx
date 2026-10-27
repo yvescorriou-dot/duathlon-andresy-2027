@@ -8,7 +8,7 @@ import { InscriptionsSection } from '@/components/inscriptions-section'
 import { ReglementSection } from '@/components/reglement-section'
 import { BenevolesSection } from '@/components/benevoles-section'
 import { FaqSection } from '@/components/faq-section'
-import { PartenairesSection } from '@/components/partenaires-section'
+// import { PartenairesSection } from '@/components/partenaires-section'
 import { PartenairesBande } from '@/components/partenaires-bande'
 import { SiteFooter } from '@/components/site-footer'
 
@@ -25,7 +25,7 @@ export default function Page() {
         <InscriptionsSection />
         <ReglementSection />
         <BenevolesSection />
-        <PartenairesSection />
+        {/* <PartenairesSection /> */}
         <FaqSection />
       </main>
       <PartenairesBande />
