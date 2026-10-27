@@ -1,4 +1,20 @@
-import { Facebook, Instagram } from 'lucide-react'
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="size-6" aria-hidden="true">
+      <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5H17V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.4-3.8 3.9V11H8.5v3H11v7h2.5Z" />
+    </svg>
+  )
+}
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="size-6" aria-hidden="true">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
 
 export function SiteFooter() {
   return (
@@ -24,7 +40,7 @@ export function SiteFooter() {
               aria-label="Facebook du Triath'Club d'Andrésy (nouvel onglet)"
               className="transition-opacity hover:opacity-70"
             >
-              <Facebook className="size-6" aria-hidden="true" />
+              <FacebookIcon />
             </a>
             <a
               href="https://www.instagram.com/triathlonandresy/"
@@ -33,7 +49,7 @@ export function SiteFooter() {
               aria-label="Instagram du Triath'Club d'Andrésy (nouvel onglet)"
               className="transition-opacity hover:opacity-70"
             >
-              <Instagram className="size-6" aria-hidden="true" />
+              <InstagramIcon />
             </a>
           </div>
           <p className="mt-4">
