@@ -44,7 +44,7 @@ export function PartenairesSection() {
                 alt={`Logo ${p.name}`}
                 width={200}
                 height={100}
-                className={`mx-auto ${p.grand ? 'h-24' : 'h-16'} w-auto object-contain`}
+                className={`mx-auto ${p.grand ? 'h-28' : 'h-20'} w-auto object-contain`}
               />
             ) : (
               <span className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
@@ -58,14 +58,14 @@ export function PartenairesSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={`Découvrir ${p.name} (nouvel onglet)`}
-                className="flex items-center justify-center rounded-lg border border-border bg-white px-6 py-8 transition-shadow hover:shadow-md"
+                           className="flex items-center justify-center p-2 transition-opacity hover:opacity-70"
               >
                 {logo}
               </a>
             ) : (
               <div
                 key={p.name}
-                className="flex items-center justify-center rounded-lg border border-border bg-white px-6 py-8"
+                               className="flex items-center justify-center p-2"
               >
                 {logo}
               </div>
