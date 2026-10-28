@@ -3,77 +3,28 @@ import { SectionHeading } from '@/components/section-heading'
 
 type Partenaire = {
   name: string
-  logo?: string
-  url?: string
-  role: string
+  logo: string
+  url?: string // renseigner l'URL → le logo devient cliquable
 }
 
-// Ajouter un partenaire = ajouter une ligne ici
-const mecenes: Partenaire[] = [
-  {
-    name: 'IPPON',
-    logo: '/images/logos/logo ippon 2.png',
-    url: 'https://fr.ippon.tech/',
-    role: 'Mécène du Triath\'Club d\'Andrésy',
-  },
-  {
-    name: 'Maisons Wedgwood',
-    logo: '/images/logos/logo wedgwood.png',
-    url: 'https://www.maisonswedgwood.com',
-    role: 'Mécène du Triath\'Club d\'Andrésy',
-  },
+// Ajouter / retirer un partenaire = une ligne
+const partenaires: Partenaire[] = [
+  { name: 'IPPON', logo: '/images/logos/logo ippon 2.png', url: 'https://fr.ippon.tech/' },
+  { name: 'Maisons Wedgwood', logo: '/images/logos/logo wedgwood.png', url: 'https://www.maisonswedgwood.com' },
+  { name: 'Oger', logo: '/images/logos/oger.png' },
+  { name: 'Ktalyst', logo: '/images/logos/Ktalyst.jpg' },
+  { name: 'La Cucina', logo: '/images/logos/logo La Cucina.jpeg' },
+  { name: 'Crédit Mutuel', logo: '/images/logos/Crédit-Mutuel-logo-650x366.png' },
+  { name: 'Hesprie', logo: '/images/logos/Hesprie Logo N&B.png' },
+  { name: 'All Sport Vision', logo: '/images/logos/Logo ASV HD.png' },
+  { name: 'La Rationnelle, logo: '/images/logos/logo la rationelle foncé.png' },
+  { name: 'RRUNNING', logo: '/images/logos/Logo-RRUNNING-Noir-RVB.png' },
+  { name: 'We Rise', logo: '/images/logos/logo we rise.png' },
+  { name: 'Bières & Cidres', logo: '/images/logos/Bières & Cidres.jpeg' },
+  { name: 'Boulangerie Beaufils Andrésy', logo: '/images/Boulangerie Beaufils.jpeg' },
+  { name: "Ville d'Andrésy", logo: '/images/logos/Ville andresy.jpeg', url: 'https://www.andresy.com' },
+  { name: 'Comité Départemental des Yvelines', logo: '/images/logos/ConseilDepartementalYvelines.png', url: 'https://www.yvelines.fr/' },
 ]
-
-const institutionnels: Partenaire[] = [
-  {
-    name: "Ville d'Andrésy",
-    logo: '/images/logos/Ville andresy.jpeg',
-    url: 'https://www.andresy.com',
-    role: 'Mairie, Services techniques, police municipale, accueil de l\'épreuve',
-  },
-  {
-    name: 'Comité Départemental des Yvelines',
-    logo: '/images/logos/ConseilDepartementalYvelines.png',
-    url: 'https://www.yvelines.fr/',
-    role: 'Soutien et participation financière',
-  },
-]
-
-function PartenaireCard({ p, big }: { p: Partenaire; big?: boolean }) {
-  const inner = (
-    <>
-      {p.logo ? (
-        <Image
-          src={p.logo}
-          alt={`Logo ${p.name}`}
-          width={big ? 400 : 220}
-          height={big ? 200 : 110}
-       className="mx-auto w-auto max-h-[90px] md:max-h-[110px] object-contain transition duration-300 [@media(hover:hover)]:grayscale [@media(hover:hover)]:opacity-70 [@media(hover:hover)]:group-hover:grayscale-0 [@media(hover:hover)]:group-hover:opacity-100"
-        />
-      ) : (
-        <span className="font-display text-lg font-bold uppercase">{p.name}</span>
-      )}
-      <span className="mt-3 block text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-        {p.role}
-      </span>
-    </>
-  )
-  return p.url ? (
-    <a
-      href={p.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group block rounded-lg border border-border bg-white px-6 py-8 text-center ring-1 ring-border transition-shadow hover:shadow-md"
-      title={`Visiter le site de ${p.name}`}
-    >
-      {inner}
-    </a>
-  ) : (
-    <div className="group rounded-lg border border-border bg-white px-6 py-8 text-center">
-      {inner}
-    </div>
-  )
-}
 
 export function PartenairesSection() {
   return (
@@ -81,31 +32,41 @@ export function PartenairesSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           eyebrow="Partenaires"
-          title="Ils nous soutiennent"
-          description="Le duathlon d'Andrésy existe grâce à la générosité de nos mécènes, partenaires et des institutions qui nous accompagnent."
+          title="Nos partenaires"
+          description="Le duathlon d'Andrésy existe grâce à eux. Cliquez sur un logo pour découvrir le partenaire."
         />
-
-        <h3 className="mt-12 font-display text-xl font-bold uppercase italic">Nos mécènes</h3>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2">
-          {mecenes.map((p) => (
-            <PartenaireCard key={p.name} p={p} big />
-          ))}
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          {partenaires.map((p) => {
+            const logo = (
+              <Image
+                src={p.logo}
+                alt={`Logo ${p.name}`}
+                width={200}
+                height={100}
+                className="mx-auto h-16 w-auto object-contain"
+              />
+            )
+            return p.url ? (
+              <a
+                key={p.name}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`Découvrir ${p.name} (nouvel onglet)`}
+                className="flex items-center justify-center rounded-lg border border-border bg-white px-6 py-8 transition-shadow hover:shadow-md"
+              >
+                {logo}
+              </a>
+            ) : (
+              <div
+                key={p.name}
+                className="flex items-center justify-center rounded-lg border border-border bg-white px-6 py-8"
+              >
+                {logo}
+              </div>
+            )
+          })}
         </div>
-
-        <h3 className="mt-14 font-display text-xl font-bold uppercase italic">Nos partenaires institutionnels</h3>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2">
-          {institutionnels.map((p) => (
-            <PartenaireCard key={p.name} p={p} />
-          ))}
-        </div>
-
-        <p className="mt-10 text-sm text-muted-foreground">
-          {'Vous souhaitez soutenir le club ou l\'épreuve ? Écrivez-nous à '}
-          <a href="mailto:andresytriathlon@outlook.fr" className="font-semibold text-accent underline underline-offset-4 hover:opacity-80">
-            andresytriathlon@outlook.fr
-          </a>
-          {'.'}
-        </p>
       </div>
     </section>
   )
