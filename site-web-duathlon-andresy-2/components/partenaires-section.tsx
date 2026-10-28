@@ -3,9 +3,9 @@ import { SectionHeading } from '@/components/section-heading'
 
 type Partenaire = {
   name: string
-  logo: string
+  logo?: string // sans logo → le nom s'affiche en texte
   url?: string
-  grand?: boolean // logo qui a besoin de plus de hauteur
+  grand?: boolean
 }
 
 // Ajouter / retirer un partenaire = une ligne
@@ -22,7 +22,7 @@ const partenaires: Partenaire[] = [
   { name: 'RRUNNING', logo: '/images/logos/Logo-RRUNNING-Noir-RVB.png' },
   { name: 'We Rise', logo: '/images/logos/logo we rise.png' },
   { name: 'Bières & Cidres', logo: '/images/logos/logo bières et cidres.png' },
-  { name: 'Boulangerie Beaufils Andrésy', logo: '/images/logos/Boulangerie Beaufils.jpg' },
+  { name: 'Boulangerie Beaufils Andrésy' },
   { name: "Ville d'Andrésy", logo: '/images/logos/Ville andresy.jpeg', url: 'https://www.andresy.com' },
   { name: 'Comité Départemental des Yvelines', logo: '/images/logos/ConseilDepartementalYvelines.png', url: 'https://www.yvelines.fr/' },
 ]
@@ -38,7 +38,7 @@ export function PartenairesSection() {
         />
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {partenaires.map((p) => {
-            const logo = (
+                     const logo = p.logo ? (
               <Image
                 src={p.logo}
                 alt={`Logo ${p.name}`}
@@ -46,6 +46,10 @@ export function PartenairesSection() {
                 height={100}
                 className={`mx-auto ${p.grand ? 'h-24' : 'h-16'} w-auto object-contain`}
               />
+            ) : (
+              <span className="font-display text-lg font-bold uppercase tracking-wide text-foreground">
+                {p.name}
+              </span>
             )
             return p.url ? (
               <a
