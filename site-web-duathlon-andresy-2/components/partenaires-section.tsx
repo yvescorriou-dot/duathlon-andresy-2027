@@ -12,10 +12,10 @@ type Partenaire = {
 const partenaires: Partenaire[] = [
   { name: 'IPPON', logo: '/images/logos/logo ippon 2.png', url: 'https://fr.ippon.tech/' },
   { name: 'Maisons Wedgwood', logo: '/images/logos/logo wedgwood.png', url: 'https://www.maisonswedgwood.com' },
-  { name: 'Oger', logo: '/images/logos/oger.png' , grand: true , url: 'https://oger-pereetfils.com/' },
+  { name: 'Oger', logo: '/images/logos/Oger père et fils.jpeg' , grand: true , url: 'https://oger-pereetfils.com/' },
   { name: 'Ktalyst', logo: '/images/logos/Ktalyst.jpg' , url: 'https://ktalyst.fr/' },
   { name: 'La Cucina', logo: '/images/logos/logo La Cucina.jpeg' , url:'https://lacucina-andresy.fr/' },
-  { name: 'Crédit Mutuel', logo: '/images/logos/Crédit-Mutuel-logo-650x366.png', url:'https://www.creditmutuel.fr/fr/caisse/ile-de-france/yvelines/10278-06365-01?y_source=1_MTE2ODUzNDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D' },
+  { name: 'Crédit Mutuel', logo: '/images/logos/674844bf8cbae_creditMutuel.jpeg', url:'https://www.creditmutuel.fr/fr/caisse/ile-de-france/yvelines/10278-06365-01?y_source=1_MTE2ODUzNDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D' },
   { name: 'Bouticycle Chambourcy', logo: '/images/logos/logo-btc-sans-fond.png', grand: true , url:'https://bouticycle.com/-Chambourcy-' },
   // { name: 'Renault', logo: '/images/logos/logo renault.png' },
   // { name: 'La Rationnelle', logo: '/images/logos/logo la rationelle foncé.png', url:'https://www.la-rationnelle.fr/' },
