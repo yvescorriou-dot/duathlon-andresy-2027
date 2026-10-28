@@ -4,7 +4,8 @@ import { SectionHeading } from '@/components/section-heading'
 type Partenaire = {
   name: string
   logo: string
-  url?: string // renseigner l'URL → le logo devient cliquable
+  url?: string
+  grand?: boolean // logo qui a besoin de plus de hauteur
 }
 
 // Ajouter / retirer un partenaire = une ligne
