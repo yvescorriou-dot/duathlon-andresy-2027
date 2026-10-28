@@ -20,8 +20,8 @@ const partenaires: Partenaire[] = [
   { name: 'La Rationnelle', logo: '/images/logos/logo la rationelle foncé.png' },
   { name: 'RRUNNING', logo: '/images/logos/Logo-RRUNNING-Noir-RVB.png' },
   { name: 'We Rise', logo: '/images/logos/logo we rise.png' },
-  { name: 'Bières & Cidres', logo: '/images/logos/Bières & Cidres.jpeg' },
-  { name: 'Boulangerie Beaufils Andrésy', logo: '/images/Boulangerie Beaufils.jpeg' },
+  { name: 'Bières & Cidres', logo: '/images/logos/Bières & Cidres.jpg' },
+  { name: 'Boulangerie Beaufils Andrésy', logo: '/images/Boulangerie Beaufils.jpg' },
   { name: "Ville d'Andrésy", logo: '/images/logos/Ville andresy.jpeg', url: 'https://www.andresy.com' },
   { name: 'Comité Départemental des Yvelines', logo: '/images/logos/ConseilDepartementalYvelines.png', url: 'https://www.yvelines.fr/' },
 ]
