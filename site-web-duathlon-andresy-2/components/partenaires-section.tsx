@@ -12,17 +12,17 @@ type Partenaire = {
 const partenaires: Partenaire[] = [
   { name: 'IPPON', logo: '/images/logos/logo ippon 2.png', url: 'https://fr.ippon.tech/' },
   { name: 'Maisons Wedgwood', logo: '/images/logos/logo wedgwood.png', url: 'https://www.maisonswedgwood.com' },
-  { name: 'Oger', logo: '/images/logos/oger.png' },
+  { name: 'Oger', logo: '/images/logos/oger.png' , grand: true  },
   { name: 'Ktalyst', logo: '/images/logos/Ktalyst.jpg' },
   { name: 'La Cucina', logo: '/images/logos/logo La Cucina.jpeg' },
   { name: 'Crédit Mutuel', logo: '/images/logos/Crédit-Mutuel-logo-650x366.png' },
-  { name: 'Hesprie', logo: '/images/logos/Hesprie Logo N&B.png' },
+  { name: 'Hesprie', logo: '/images/logos/Hesprie Logo N&B.png', grand: true  },
   { name: 'All Sport Vision', logo: '/images/logos/Logo ASV HD.png' },
   { name: 'La Rationnelle', logo: '/images/logos/logo la rationelle foncé.png' },
   { name: 'RRUNNING', logo: '/images/logos/Logo-RRUNNING-Noir-RVB.png' },
   { name: 'We Rise', logo: '/images/logos/logo we rise.png' },
   { name: 'Bières & Cidres', logo: '/images/logos/Bières & Cidres.jpg' },
-  { name: 'Boulangerie Beaufils Andrésy', logo: '/images/Boulangerie Beaufils.jpg' },
+  { name: 'Boulangerie Beaufils Andrésy', logo: '/images/logos/Boulangerie Beaufils.jpg' },
   { name: "Ville d'Andrésy", logo: '/images/logos/Ville andresy.jpeg', url: 'https://www.andresy.com' },
   { name: 'Comité Départemental des Yvelines', logo: '/images/logos/ConseilDepartementalYvelines.png', url: 'https://www.yvelines.fr/' },
 ]
@@ -44,7 +44,7 @@ export function PartenairesSection() {
                 alt={`Logo ${p.name}`}
                 width={200}
                 height={100}
-                className="mx-auto h-16 w-auto object-contain"
+                className={`mx-auto ${p.grand ? 'h-24' : 'h-16'} w-auto object-contain`}
               />
             )
             return p.url ? (
