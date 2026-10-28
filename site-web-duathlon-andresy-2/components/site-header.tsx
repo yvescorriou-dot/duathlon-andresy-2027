@@ -12,8 +12,8 @@ import { Menu, X } from 'lucide-react'
   { href: '#inscriptions', label: 'Inscriptions' },
   { href: '#reglement', label: 'Règlement' },
   { href: '#benevoles', label: 'Bénévoles' },
- { href: '#partenaires', label: 'Partenaires' },
   { href: '#faq', label: 'FAQ' },
+  { href: '#partenaires', label: 'Partenaires' },
 ]
 
 export function SiteHeader() {
