@@ -25,8 +25,8 @@ export default function Page() {
         <InscriptionsSection />
         <ReglementSection />
         <BenevolesSection />
-        <PartenairesSection />
         <FaqSection />
+         <PartenairesSection />
       </main>
        {/* <PartenairesBande /> */}
       <SiteFooter />
