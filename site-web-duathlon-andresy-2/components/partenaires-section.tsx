@@ -17,7 +17,7 @@ const partenaires: Partenaire[] = [
   { name: 'Crédit Mutuel', logo: '/images/logos/Crédit-Mutuel-logo-650x366.png' },
   { name: 'Hesprie', logo: '/images/logos/Hesprie Logo N&B.png' },
   { name: 'All Sport Vision', logo: '/images/logos/Logo ASV HD.png' },
-  { name: 'La Rationnelle, logo: '/images/logos/logo la rationelle foncé.png' },
+  { name: 'La Rationnelle', logo: '/images/logos/logo la rationelle foncé.png' },
   { name: 'RRUNNING', logo: '/images/logos/Logo-RRUNNING-Noir-RVB.png' },
   { name: 'We Rise', logo: '/images/logos/logo we rise.png' },
   { name: 'Bières & Cidres', logo: '/images/logos/Bières & Cidres.jpeg' },
