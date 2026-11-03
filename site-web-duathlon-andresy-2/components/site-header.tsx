@@ -24,7 +24,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
         <a href="#top" className="flex items-center gap-3 font-display text-xl font-extrabold uppercase italic tracking-tight">
           <span className="flex size-11 items-center justify-center overflow-hidden rounded-md bg-white p-0.5">
-            <Image src="/images/logo-duathlon-2027.jpg" alt="" width={88} height={88} className="size-full object-contain" />
+            <Image src="/images/logos/logo-duathlon-2027.jpg" alt="" width={88} height={88} className="size-full object-contain" />
           </span>
           <span className="flex items-baseline gap-2">
             <span>Duathlon</span>
