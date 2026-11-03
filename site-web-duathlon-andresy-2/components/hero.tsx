@@ -22,7 +22,7 @@ export function Hero() {
 
       <div className="pointer-events-none absolute right-6 top-24 hidden w-64 rounded-2xl bg-white p-3 shadow-2xl lg:block xl:right-[max(1.5rem,calc((100vw-72rem)/2))] xl:w-80">
         <Image
-          src="/images/logo-duathlon-2027.png"
+          src="/images/duathlon 2027 - logo fond blanc.jpg"
           alt="Logo du Duathlon d'Andrésy 2027"
           width={640}
           height={640}
