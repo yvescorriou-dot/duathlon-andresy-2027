@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Bike, Footprints, Flag, Mountain } from 'lucide-react'
+import { Bike, Footprints, Flag, Mountain, ExternalLink } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 
 const segments = [
@@ -12,6 +12,7 @@ const segments = [
     image: '/images/cap1.jpg',
     position: 'object-[45%_40%]',
     alt: 'Peloton de coureurs juste après le départ du duathlon',
+      link: 'https://www.openrunner.com/route-details/25569433',
   },
   {
     step: '02',
@@ -22,6 +23,7 @@ const segments = [
     image: '/images/468A0201.jpg',
     position: 'object-[40%_50%]',
     alt: 'Cyclistes en pleine ascension de la côte de Verdun',
+    link: 'https://www.openrunner.com/route-details/25569461',
   },
   {
     step: '03',
@@ -32,6 +34,7 @@ const segments = [
     image: '/images/cap2.jpg',
     position: 'object-[50%_40%]',
     alt: "Deux duathlètes du TCA souriants sur la seconde course à pied, rue Georges Delamare",
+      link: 'https://www.openrunner.com/route-details/25569442',
   },
 ]
 
@@ -91,6 +94,15 @@ export function ParcoursSection() {
                   </span>
                 </div>
                 <p className="mt-4 leading-relaxed text-primary-foreground/80">{seg.text}</p>
+                                <a
+                  href={seg.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto pt-4 inline-flex items-center gap-1.5 self-start rounded-md bg-accent px-3 py-2 text-sm font-bold uppercase tracking-wide text-accent-foreground transition-transform hover:scale-105"
+                >
+                  Voir le tracé (GPX)
+                  <ExternalLink className="size-4" aria-hidden="true" />
+                </a>
               </div>
             </li>
           ))}
@@ -126,8 +138,17 @@ export function ParcoursSection() {
           </div>
         </aside>
 
-        <p className="mt-10 text-sm text-primary-foreground/70">
-          {"Les tracés détaillés (GPX et cartes) seront publiés quelques semaines avant l'épreuve."}
+              <p className="mt-10 text-sm text-primary-foreground/70">
+          {"Tracés officiels validés — consultables sur "}
+          <a
+            href="https://www.openrunner.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-accent underline underline-offset-4 hover:text-accent/80"
+          >
+            OpenRunner
+          </a>
+          {" (carte interactive et export GPX)."}
         </p>
       </div>
     </section>
