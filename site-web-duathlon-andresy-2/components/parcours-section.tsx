@@ -20,7 +20,7 @@ const segments = [
     title: 'Vélo',
     distance: '20 km',
     text: "Deux ascensions de la mythique côte de Verdun et beaucoup de pilotage dans les rues d'Andrésy, sur routes fermées à la circulation.",
-    image: '/images/468A0201.jpg',
+    image: '/images/velo.jpg',
     position: 'object-[40%_50%]',
     alt: 'Cyclistes en pleine ascension de la côte de Verdun',
     link: 'https://www.openrunner.com/route-details/25569461',
