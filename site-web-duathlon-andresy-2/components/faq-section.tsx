@@ -2,6 +2,10 @@ import { ChevronDown } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 
 const faqs = [
+    {
+    q: 'Le triathlon devient duathlon : pourquoi ce changement ?',
+    a: "Après le triathlon Sprint de mai 2026, le Triath'Club d'Andrésy innove pour sa 7e édition : place à un duathlon intra-urbain le dimanche 30 mai 2027, toujours au départ de la Mairie. Course à pied, vélo, course à pied : même esprit, nouvelle discipline.",
+  },
   {
     q: 'Y a-t-il plusieurs vagues de départ ?',
     a: "Non : en format duathlon, un seul départ pour tout le monde, devant la Mairie, à 15h00.",
